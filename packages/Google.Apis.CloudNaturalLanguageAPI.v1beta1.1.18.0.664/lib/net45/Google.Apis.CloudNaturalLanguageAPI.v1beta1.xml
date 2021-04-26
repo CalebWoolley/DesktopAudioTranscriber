@@ -1,0 +1,525 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Google.Apis.CloudNaturalLanguageAPI.v1beta1</name>
+    </assembly>
+    <members>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIService">
+            <summary>The CloudNaturalLanguageAPI Service.</summary>
+        </member>
+        <member name="F:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIService.Version">
+            <summary>The API version.</summary>
+        </member>
+        <member name="F:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIService.DiscoveryVersionUsed">
+            <summary>The discovery version used to generate this service.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIService.#ctor">
+            <summary>Constructs a new service.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIService.#ctor(Google.Apis.Services.BaseClientService.Initializer)">
+            <summary>Constructs a new service.</summary>
+            <param name="initializer">The service initializer.</param>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIService.Features">
+            <summary>Gets the service supported features.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIService.Name">
+            <summary>Gets the service name.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIService.BaseUri">
+            <summary>Gets the service base URI.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIService.BasePath">
+            <summary>Gets the service base path.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIService.Scope">
+            <summary>Available OAuth 2.0 scopes for use with the Google Cloud Natural Language API.</summary>
+        </member>
+        <member name="F:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIService.Scope.CloudPlatform">
+            <summary>View and manage your data across Google Cloud Platform services</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIService.Documents">
+            <summary>Gets the Documents resource.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1">
+            <summary>A base abstract class for CloudNaturalLanguageAPI requests.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new CloudNaturalLanguageAPIBaseServiceRequest instance.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.Xgafv">
+            <summary>V1 error format.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.XgafvEnum">
+            <summary>V1 error format.</summary>
+        </member>
+        <member name="F:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.XgafvEnum.Value1">
+            <summary>v1 error format</summary>
+        </member>
+        <member name="F:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.XgafvEnum.Value2">
+            <summary>v2 error format</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.AccessToken">
+            <summary>OAuth access token.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.Alt">
+            <summary>Data format for response.</summary>
+            [default: json]
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.AltEnum">
+            <summary>Data format for response.</summary>
+        </member>
+        <member name="F:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.AltEnum.Json">
+            <summary>Responses with Content-Type of application/json</summary>
+        </member>
+        <member name="F:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.AltEnum.Media">
+            <summary>Media download with context-dependent Content-Type</summary>
+        </member>
+        <member name="F:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.AltEnum.Proto">
+            <summary>Responses with Content-Type of application/x-protobuf</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.BearerToken">
+            <summary>OAuth bearer token.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.Callback">
+            <summary>JSONP</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.Fields">
+            <summary>Selector specifying which fields to include in a partial response.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.Key">
+            <summary>API key. Your API key identifies your project and provides you with API access, quota, and reports.
+            Required unless you provide an OAuth 2.0 token.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.OauthToken">
+            <summary>OAuth 2.0 token for the current user.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.Pp">
+            <summary>Pretty-print response.</summary>
+            [default: true]
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.PrettyPrint">
+            <summary>Returns response with indentations and line breaks.</summary>
+            [default: true]
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.QuotaUser">
+            <summary>Available to use for quota purposes for server-side applications. Can be any arbitrary string
+            assigned to a user, but should not exceed 40 characters.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.UploadType">
+            <summary>Legacy upload protocol for media (e.g. "media", "multipart").</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.UploadProtocol">
+            <summary>Upload protocol for media (e.g. "raw", "multipart").</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.CloudNaturalLanguageAPIBaseServiceRequest`1.InitParameters">
+            <summary>Initializes CloudNaturalLanguageAPI parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource">
+            <summary>The "documents" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeEntities(Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeEntitiesRequest)">
+            <summary>Finds named entities (currently finds proper names) in the text, entity types, salience, mentions
+            for each entity, and other properties.</summary>
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeEntitiesRequest">
+            <summary>Finds named entities (currently finds proper names) in the text, entity types, salience, mentions
+            for each entity, and other properties.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeEntitiesRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeEntitiesRequest)">
+            <summary>Constructs a new AnalyzeEntities request.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeEntitiesRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeEntitiesRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeEntitiesRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeEntitiesRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeEntitiesRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeEntitiesRequest.InitParameters">
+            <summary>Initializes AnalyzeEntities parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeSentiment(Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeSentimentRequest)">
+            <summary>Analyzes the sentiment of the provided text.</summary>
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeSentimentRequest">
+            <summary>Analyzes the sentiment of the provided text.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeSentimentRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeSentimentRequest)">
+            <summary>Constructs a new AnalyzeSentiment request.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeSentimentRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeSentimentRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeSentimentRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeSentimentRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeSentimentRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnalyzeSentimentRequest.InitParameters">
+            <summary>Initializes AnalyzeSentiment parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnnotateText(Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnnotateTextRequest)">
+            <summary>A convenience method that provides all the features that analyzeSentiment, analyzeEntities, and
+            analyzeSyntax provide in one call.</summary>
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnnotateTextRequest">
+            <summary>A convenience method that provides all the features that analyzeSentiment, analyzeEntities, and
+            analyzeSyntax provide in one call.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnnotateTextRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnnotateTextRequest)">
+            <summary>Constructs a new AnnotateText request.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnnotateTextRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnnotateTextRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnnotateTextRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnnotateTextRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnnotateTextRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.CloudNaturalLanguageAPI.v1beta1.DocumentsResource.AnnotateTextRequest.InitParameters">
+            <summary>Initializes AnnotateText parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeEntitiesRequest">
+            <summary>The entity analysis request message.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeEntitiesRequest.Document">
+            <summary>Input document.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeEntitiesRequest.EncodingType">
+            <summary>The encoding type used by the API to calculate offsets.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeEntitiesRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeEntitiesResponse">
+            <summary>The entity analysis response message.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeEntitiesResponse.Entities">
+            <summary>The recognized entities in the input document.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeEntitiesResponse.Language">
+            <summary>The language of the text, which will be the same as the language specified in the request or, if
+            not specified, the automatically-detected language. See Document.language field for more details.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeEntitiesResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeSentimentRequest">
+            <summary>The sentiment analysis request message.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeSentimentRequest.Document">
+            <summary>Input document. Currently, `analyzeSentiment` only supports English text
+            (Document.language="EN").</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeSentimentRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeSentimentResponse">
+            <summary>The sentiment analysis response message.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeSentimentResponse.DocumentSentiment">
+            <summary>The overall sentiment of the input document.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeSentimentResponse.Language">
+            <summary>The language of the text, which will be the same as the language specified in the request or, if
+            not specified, the automatically-detected language.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnalyzeSentimentResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnnotateTextRequest">
+            <summary>The request message for the text annotation API, which can perform multiple analysis types (sentiment,
+            entities, and syntax) in one call.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnnotateTextRequest.Document">
+            <summary>Input document.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnnotateTextRequest.EncodingType">
+            <summary>The encoding type used by the API to calculate offsets.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnnotateTextRequest.Features">
+            <summary>The enabled features.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnnotateTextRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnnotateTextResponse">
+            <summary>The text annotations response message.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnnotateTextResponse.DocumentSentiment">
+            <summary>The overall sentiment for the document. Populated if the user enables
+            AnnotateTextRequest.Features.extract_document_sentiment.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnnotateTextResponse.Entities">
+            <summary>Entities, along with their semantic information, in the input document. Populated if the user
+            enables AnnotateTextRequest.Features.extract_entities.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnnotateTextResponse.Language">
+            <summary>The language of the text, which will be the same as the language specified in the request or, if
+            not specified, the automatically-detected language. See Document.language field for more details.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnnotateTextResponse.Sentences">
+            <summary>Sentences in the input document. Populated if the user enables
+            AnnotateTextRequest.Features.extract_syntax.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnnotateTextResponse.Tokens">
+            <summary>Tokens, along with their syntactic information, in the input document. Populated if the user
+            enables AnnotateTextRequest.Features.extract_syntax.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.AnnotateTextResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.DependencyEdge">
+            <summary>Represents dependency parse tree information for a token.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.DependencyEdge.HeadTokenIndex">
+            <summary>Represents the head of this token in the dependency tree. This is the index of the token which has
+            an arc going to this token. The index is the position of the token in the array of tokens returned by the
+            API method. If this token is a root token, then the `head_token_index` is its own index.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.DependencyEdge.Label">
+            <summary>The parse label for the token.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.DependencyEdge.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Document">
+             <summary>################################################################ #
+            
+             Represents the input to API methods.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Document.Content">
+            <summary>The content of the input in string format.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Document.GcsContentUri">
+            <summary>The Google Cloud Storage URI where the file content is located.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Document.Language">
+             <summary>The language of the document (if not specified, the language is automatically detected). Both ISO
+             and BCP-47 language codes are accepted. **Current Language Restrictions:**
+            
+             * Only English, Spanish, and Japanese textual content are supported, with the following additional
+             restriction: * `analyzeSentiment` only supports English text. If the language (either specified by the
+             caller or automatically detected) is not supported by the called API method, an `INVALID_ARGUMENT` error is
+             returned.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Document.Type">
+            <summary>Required. If the type is not set or is `TYPE_UNSPECIFIED`, returns an `INVALID_ARGUMENT`
+            error.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Document.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Entity">
+            <summary>Represents a phrase in the text that is a known entity, such as a person, an organization, or location.
+            The API associates information, such as salience and mentions, with entities.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Entity.Mentions">
+            <summary>The mentions of this entity in the input document. The API currently supports proper noun
+            mentions.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Entity.Metadata">
+             <summary>Metadata associated with the entity.
+            
+             Currently, only Wikipedia URLs are provided, if available. The associated key is "wikipedia_url".</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Entity.Name">
+            <summary>The representative name for the entity.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Entity.Salience">
+             <summary>The salience score associated with the entity in the [0, 1.0] range.
+            
+             The salience score for an entity provides information about the importance or centrality of that entity to
+             the entire document text. Scores closer to 0 are less salient, while scores closer to 1.0 are highly
+             salient.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Entity.Type">
+            <summary>The entity type.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Entity.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.EntityMention">
+            <summary>Represents a mention for an entity in the text. Currently, proper noun mentions are
+            supported.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.EntityMention.Text">
+            <summary>The mention text.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.EntityMention.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Features">
+            <summary>All available features for sentiment, syntax, and semantic analysis. Setting each one to true will
+            enable that specific analysis for the input.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Features.ExtractDocumentSentiment">
+            <summary>Extract document-level sentiment.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Features.ExtractEntities">
+            <summary>Extract entities.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Features.ExtractSyntax">
+            <summary>Extract syntax information.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Features.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.PartOfSpeech">
+            <summary>Represents part of speech information for a token.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.PartOfSpeech.Tag">
+            <summary>The part of speech tag.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.PartOfSpeech.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Sentence">
+            <summary>Represents a sentence in the input document.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Sentence.Text">
+            <summary>The sentence text.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Sentence.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Sentiment">
+            <summary>Represents the feeling associated with the entire text or entities in the text.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Sentiment.Magnitude">
+            <summary>A non-negative number in the [0, +inf) range, which represents the absolute magnitude of sentiment
+            regardless of polarity (positive or negative).</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Sentiment.Polarity">
+            <summary>Polarity of the sentiment in the [-1.0, 1.0] range. Larger numbers represent more positive
+            sentiments.  This field is being deprecated in favor of score. Please refer to our documentation at
+            https://cloud.google.com/natural-language/docs for more information.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Sentiment.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Status">
+             <summary>The `Status` type defines a logical error model that is suitable for different programming
+             environments, including REST APIs and RPC APIs. It is used by [gRPC](https://github.com/grpc). The error model
+             is designed to be:
+            
+             - Simple to use and understand for most users - Flexible enough to meet unexpected needs
+            
+             # Overview
+            
+             The `Status` message contains three pieces of data: error code, error message, and error details. The error code
+             should be an enum value of google.rpc.Code, but it may accept additional error codes if needed.  The error
+             message should be a developer-facing English message that helps developers *understand* and *resolve* the error.
+             If a localized user-facing error message is needed, put the localized message in the error details or localize
+             it in the client. The optional error details may contain arbitrary information about the error. There is a
+             predefined set of error detail types in the package `google.rpc` which can be used for common error conditions.
+            
+             # Language mapping
+            
+             The `Status` message is the logical representation of the error model, but it is not necessarily the actual wire
+             format. When the `Status` message is exposed in different client libraries and different wire protocols, it can
+             be mapped differently. For example, it will likely be mapped to some exceptions in Java, but more likely mapped
+             to some error codes in C.
+            
+             # Other uses
+            
+             The error model and the `Status` message can be used in a variety of environments, either with or without APIs,
+             to provide a consistent developer experience across different environments.
+            
+             Example uses of this error model include:
+            
+             - Partial errors. If a service needs to return partial errors to the client, it may embed the `Status` in the
+             normal response to indicate the partial errors.
+            
+             - Workflow errors. A typical workflow has multiple steps. Each step may have a `Status` message for error
+             reporting purpose.
+            
+             - Batch operations. If a client uses batch request and batch response, the `Status` message should be used
+             directly inside batch response, one for each error sub-response.
+            
+             - Asynchronous operations. If an API call embeds asynchronous operation results in its response, the status of
+             those operations should be represented directly using the `Status` message.
+            
+             - Logging. If some API errors are stored in logs, the message `Status` could be used directly after any
+             stripping needed for security/privacy reasons.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Status.Code">
+            <summary>The status code, which should be an enum value of google.rpc.Code.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Status.Details">
+            <summary>A list of messages that carry the error details.  There will be a common set of message types for
+            APIs to use.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Status.Message">
+            <summary>A developer-facing error message, which should be in English. Any user-facing error message should
+            be localized and sent in the google.rpc.Status.details field, or localized by the client.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Status.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.TextSpan">
+            <summary>Represents an output piece of text.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.TextSpan.BeginOffset">
+            <summary>The API calculates the beginning offset of the content in the original document according to the
+            EncodingType specified in the API request.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.TextSpan.Content">
+            <summary>The content of the output text.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.TextSpan.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Token">
+            <summary>Represents the smallest syntactic building block of the text.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Token.DependencyEdge">
+            <summary>Dependency tree parse for this token.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Token.Lemma">
+            <summary>[Lemma](https://en.wikipedia.org/wiki/Lemma_(morphology)) of the token.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Token.PartOfSpeech">
+            <summary>Parts of speech tag for this token.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Token.Text">
+            <summary>The token text.</summary>
+        </member>
+        <member name="P:Google.Apis.CloudNaturalLanguageAPI.v1beta1.Data.Token.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+    </members>
+</doc>
